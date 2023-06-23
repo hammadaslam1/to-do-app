@@ -3,6 +3,7 @@ var list = document.getElementById('event');
 const addEvent = () => {
    if (list.value!=='') {
     const item = document.createElement('div');
+    const listChild = document.createElement('div');
     item.className = 'items';
     item.style.padding = '10px';
     item.style.borderBottom = '2px solid lightslategray';
@@ -14,8 +15,7 @@ const addEvent = () => {
         console.log(i.target);
 
         i.addEventListener("click", (e) => {
-            console.log(e.target);
-            e.target.style.color = 'red'
+            
           });
      }
    }
