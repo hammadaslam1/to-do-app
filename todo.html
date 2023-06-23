@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body{
@@ -24,6 +25,7 @@
             height: 30px;
             background-color: lightslategray;
         }
+        
     </style>
 </head>
 <body>
@@ -32,7 +34,7 @@
             <h2 class="text-center text-4xl my-5 text-white font-bold">To-Do App</h2>
             <input type="text" class="event rounded-lg text-lg text-center" name="event" id="event">
             <input type="button" class="my-3 cursor-pointer bg-[lightslategray] w-[300px] mx-auto rounded-lg font-medium p-1 hover:bg-gray-500 active:bg-gray-700" value="Submit" onclick="addEvent()">
-            <div id="list" class="">
+            <div id="list" class="list">
 
             </div>
         </div>
