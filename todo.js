@@ -30,12 +30,19 @@ const addEvent = () => {
      }
    }
     list.value = '';
+
+    const buttons = document.querySelectorAll('.list .list-child .btn');
+    buttons.forEach((del) => {
+      del.addEventListener('click', () => {
+        const child = del.parentElement;
+        child.remove();
+      });
+    });
 }
 
 
-function deleteItem() {
 
-}
+
 
 /* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link> */
 
