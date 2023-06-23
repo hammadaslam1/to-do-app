@@ -15,7 +15,7 @@ const addEvent = () => {
 
         i.addEventListener("click", (e) => {
             console.log(e.target);
-            e.target.style.color = 'pink'
+            e.target.style.color = 'red'
           });
      }
    }
